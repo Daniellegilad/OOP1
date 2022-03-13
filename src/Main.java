@@ -2,6 +2,31 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //מחלקה היא קובץ של קוד שמתאר ומכיל פורמט של עצמים.
+        //
+        //למשתנה שאנו יומרים מהמחלקה קוראים OBJECT / מופע או משתנה
+        //Classname objectName = new Classname();
+        //המילה NEW היא בנאי/ קונסטרקטור
+
+        Person danielle = new Person();
+        danielle.name="danielle";
+        danielle.height= 1.65;
+        danielle.id=322215450;
+        danielle.isMarried=false;
+        System.out.println(danielle.name);
+        System.out.println(danielle.height);
+        System.out.println(danielle.id);
+        System.out.println(danielle.isMarried);
+        
+        CUP hotMug =new CUP();
+        hotMug.DRINK="coffe!";
+        hotMug.SIZE='S';
+        System.out.println(hotMug.DRINK);
+        System.out.println(hotMug.SIZE);
+        hotMug.drink();
+        hotMug.spill();
+        danielle.SLEEP();
+
         Circle c = new Circle();
         c.radius=55;
         c.color="pink";
